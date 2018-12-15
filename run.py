@@ -17,5 +17,5 @@ bw.ready();
 bw.speed = SPEED;
 
 bw.forward();
-sleep(2.00)
+sleep(1.00)
 bw.stop();
