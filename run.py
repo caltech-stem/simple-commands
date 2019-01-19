@@ -17,5 +17,5 @@ for i in range (10):
   SPEED = random.randint(10,100)
   bw.speed = SPEED;
   bw.forward();
-  sleep(random.randint(0,1,2)
+  sleep(random.randint(3))
   bw.stop();
