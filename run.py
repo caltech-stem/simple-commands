@@ -17,4 +17,8 @@ FSPEED = 100
 bw.speed = FSPEED;
 bw.forward();
 sleep(1.00)
+fw.turn_right();
+sleep(0.5);
+fw.turn_straight();
+sleep(1);
 bw.stop();
