@@ -14,12 +14,7 @@ fw.ready()
 
 FSPEED = 100
 
-bw.ready();
-fw.ready();
 bw.speed = FSPEED;
-fw.speed = FSPEED;
 bw.forward();
-fw.left();
 sleep(1.00)
 bw.stop();
-fw.stop();
