@@ -10,7 +10,7 @@ bw = back_wheels.Back_Wheels(debug=False, db=db_file)
 bw.ready()
 fw.ready()
 
-SPEED = 70
+SPEED = 100
 
 bw.ready();
 
@@ -38,9 +38,14 @@ bw.stop
 bw.forward();
 fw.turn_left()
 bw.stop();
-fw.turn_straight();
+fw.turn_straight()
 sleep(2.00)
-
-
-
-
+bw.stop();
+bw.foward();
+fw.turn_right()
+fw.turn_straight();
+fw.turn_left();
+sleep(2.00)
+bw.stop();
+fw.turn_straight()
+sleep(2.00)
