@@ -15,7 +15,7 @@ fw.ready()
 FSPEED = 100
 bw.speed = FSPEED;
 fw.turn_right();
-delay = 1
+delay = 1.1
 #dance time LOL
 for i in range(10):
   delay = delay - 0.1
