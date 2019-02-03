@@ -22,7 +22,6 @@ for i in range(10):
   bw.forward();
   sleep(delay)
   bw.stop();
-  bw.speed = -100
-  bw.forward();
+  bw.backward();
   sleep(delay)
   bw.stop();
