@@ -13,11 +13,17 @@ bw.ready()
 fw.ready()
 
 FSPEED = 100
-
+bw.speed = FSPEED;
 fw.turn_right();
-
-for i in range(5):
-  bw.speed = FSPEED;
+delay = 1
+#dance time LOL
+for i in range(10):
+  delay = delay - 0.1
+  bw.speed = 100
   bw.forward();
-sleep(1.00)
-bw.stop();
+  sleep(delay)
+  bw.stop();
+  bw.speed = -100
+  bw.forward();
+  sleep(delay)
+  bw.stop();
