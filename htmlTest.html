@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HTML Hello World</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script
+
+ src="script.js"></script>
+		<canvas id="myCanvas" width="200" height="100"
+		style="border:1px solid #c3c3c3;">
+		Your browser does not support the canvas element.
+		</canvas>
+
+		<script>
+		var canvas = document.getElementById("myCanvas");
+		var ctx = canvas.getContext("2d");
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createRadialGradient(105, 105, 5, 10, 10, 151);
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "blue");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 150, 80);
+		</script>
+
+	<marquee behavior="alternate"
+		scrollamount = 25
+ 	direction="right">
+	<font color="red">Hello World! To the higher level. :) </font </marquee>
+
+
+  </body>
+</html>
